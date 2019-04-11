@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS等分圆</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+/*
+        .circle-left{
+            width: 100px;height: 200px;
+            border-radius: 0px 100px 100px 0px;
+            position: absolute;
+            right: 0;
+            transform-origin: 0 50%;
+        }
+        .circle-right{
+            width: 100px;height: 200px;
+            border-radius:  100px 0px 0px 100px ;
+            position: absolute;
+            right: 0;
+            transform-origin: 100% 50%;
+        }
+        #circle0{
+            width: 200px;height: 200px;
+            border-radius: 100px;background-color: yellowgreen;
+            position: relative;
+        }
+         #circle2{
+            background-color: #631e0b;
+            transform: rotate(180deg);
+        }
+         #circle3{
+            background-color: #bce672;
+            transform: rotate(45deg);
+        }
+        #circle4{
+            background-color: #bce672;
+            transform: rotate(90deg);
+        }
+        #circle5{
+            background-color: #ff2121;
+            transform: rotate(135deg);
+        }
+         #circle6{
+            background-color: #3b2e7e;
+            transform: rotate(180deg);
+        }
+         #circle7{
+            background-color: #ff2121;
+            transform: rotate(225deg);
+        }
+         #circle8{
+            background-color: #e0eee8;
+            transform: rotate(270deg);
+        }
+        #circle9{
+            background-color: #e0eee8;
+            transform: rotate(315deg);
+        }
+        #left{
+            clip: rect(0px 100px 200px 0px);
+            position: absolute;
+            right: 0px;
+            width: 100px;
+            height: 200px;
+            overflow: hidden;
+        }
+        #right{
+            clip: rect(0px 100px 200px 0px);
+            position: absolute;
+            left: 0px;
+            width: 100px;
+            height: 200px;
+            overflow: hidden;
+        }*/
+       :root {
+  --width: 200px;
+  --height:200px;
+}
+       #cicle{
+       	width: var(--width);
+       	height: var(--height);
+       	background: red;
+       	transform: rotate(45deg);
+       	border-radius: 50%;
+       	display: flex;
+       	flex-wrap:wrap;
+       	overflow: hidden;      	
+       }
+       .cicles{
+       	width: calc(var(--width)/2) ;
+       	height: calc(var(--height)/2);
+       }
+    </style>
+</head>
+<body>
+
+    <!--<div id="circle0">
+        <div id="left">
+            <div class="circle-left" id="circle2"></div>
+            <div class="circle-left" id="circle3"></div>
+            <div class="circle-left" id="circle4"></div>
+            <div class="circle-left" id="circle5"></div>
+        </div>
+        <div id="right">
+            <div class="circle-right" id="circle9"></div>
+            <div class="circle-right" id="circle8"></div>
+            <div class="circle-right" id="circle7"></div>
+            <div class="circle-right" id="circle6"></div>
+
+        </div>
+    </div>-->
+    <div id="cicle">
+    	<div class="cicles"></div>
+    	<div class="cicles"></div>
+    	<div class="cicles"></div>
+    	<div class="cicles"></div>
+    </div>
+</body>
+</html>
